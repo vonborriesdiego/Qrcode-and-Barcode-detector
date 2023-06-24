@@ -21,7 +21,7 @@ def detector(webcam):
         # Find barcodes and Qr
         for barcode in pzb.decode(frame):
             
-            # Print the date got from the barcode lecture
+            # Print the data got from the barcode lecture
             #print(barcode.data)
             
             # Convert de data from bytes to string
