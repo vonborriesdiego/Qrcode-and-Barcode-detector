@@ -1,33 +1,15 @@
-#!/usr/bin/env python
-# coding: utf-8
+#Install zbar and Pyzbar (pyzbar only if you are using Python version 3 or later)
+#!pip install zbar
+#!pip install pyzbar
 
-# #### Install Pyzbar
-
-# In[24]:
-
-
-get_ipython().system('pip3 install pyzbar')
-
-
-# In[22]:
-
-
-get_ipython().system('brew install zbar')
-
-
-# In[1]:
-
-
+#Import libraries 
 import cv2 as cv
 import numpy as np
-#from pyzbar.pyzbar import decode
 import pyzbar.pyzbar as pzb
+#from pyzbar.pyzbar import decode
 
 
-# #### Function to detect Qrcode and Barcode
-
-# In[2]:
-
+# Create a function to detect Qrcode and Barcode
 
 def detector(webcam):
 
@@ -74,8 +56,6 @@ if __name__ == '__main__':
     webcam = cv.VideoCapture(0)
 
 
-# In[3]:
-
-
-detector(webcam)
+#To execute the function run:
+#detector(webcam)
 
