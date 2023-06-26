@@ -11,6 +11,9 @@ import pyzbar.pyzbar as pzb
 
 # Create a function to detect Qrcode and Barcode
 
+# Initialize the camara
+webcam = cv.VideoCapture(0)
+
 def detector(webcam):
 
     while(True):
